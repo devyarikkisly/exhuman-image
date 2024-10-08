@@ -69,7 +69,7 @@ if uploaded_image and token:
 
     skin_color = st.selectbox("Skin color", ["pale", "white", "tanned", "black"])
 
-    gender = st.text_input("Gender", value="")
+    gender = st.selectbox("Gender", ["man", "woman"])
     auto_detect_hair_color = st.checkbox("Auto-detect hair color", value=True)
     nsfw_policy = st.selectbox("NSFW Policy", ["filter", "blur", "allow"])
 
